@@ -1,0 +1,13 @@
+@startuml
+left to right direction
+actor "Blogueur" as fc
+actor "User" as fc1
+rectangle Blog {
+  usecase "CRUD Blogs" as UC1
+  usecase "CRUD Categories" as UC2
+  usecase "Consulter Blogs" as UC3
+}
+fc -- UC1
+fc -- UC2
+fc1 -- UC3
+@enduml
