@@ -1,0 +1,20 @@
+    @startuml
+    left to right direction
+
+
+    actor Blogueur as "Bloger"
+
+    rectangle "Blog" {
+        usecase "View Blog" as UC_ConsulterArticles
+        usecase "Add Category" as UC_Categorie
+        usecase "Add Blog" as UC_Article 
+        usecase "View Category" as Uc_view_category 
+        
+    }
+    Blogueur -- UC_Article
+    Blogueur -- UC_Categorie
+    Blogueur -- UC_ConsulterArticles
+    Blogueur -- Uc_view_category
+
+  
+    @enduml
