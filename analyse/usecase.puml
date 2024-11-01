@@ -1,13 +1,13 @@
     @startuml
     left to right direction
 
-    actor Visiteur
-    actor Blogueur
+    actor Visiteur as "user"
+    actor Blogueur as "Bloger"
 
     rectangle "Blog" {
-        usecase "Consulter article" as UC_ConsulterArticles
-        usecase "CRUD Catégorie" as UC_Categorie
-        usecase "CRUD Article" as UC_Article  
+        usecase "View Blogs" as UC_ConsulterArticles
+        usecase "CRUD Categories" as UC_Categorie
+        usecase "CRUD Blog" as UC_Article  
         usecase "Authentification" as Auth
     }
     Blogueur -- UC_Article
