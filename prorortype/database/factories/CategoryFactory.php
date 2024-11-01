@@ -25,12 +25,12 @@ class CategoryFactory extends Factory
         ];
     }
 
-    public function active(): Factory
-    {
-        return $this->state(function (array $attributes) {
-            return [
-                'is_active' => true,
-            ];
-        });
-    }
+    // public function active(): Factory
+    // {
+    //     return $this->state(function (array $attributes) {
+    //         return [
+    //             'is_active' => true,
+    //         ];
+    //     });
+    // }
 }
